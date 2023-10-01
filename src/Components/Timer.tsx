@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react";
 
 type TimerArgs = {
     milisegundos: number
-}
+};
 
 export const Timer = ({milisegundos}: TimerArgs) => {
 
@@ -12,12 +12,13 @@ export const Timer = ({milisegundos}: TimerArgs) => {
   useEffect(() => {
     ref.current && clearInterval(ref.current);
     ref.current = setInterval( ()=> setSegundos(s=> s + 1) , milisegundos);
-  },[milisegundos])
+  },[milisegundos]);
+
   return (
     <>
       <h4>Timer: <small>{ segundos }</small></h4>
     </>
-  )
+  );
 }
 
-export default Timer
+export default Timer;
