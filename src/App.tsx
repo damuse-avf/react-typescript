@@ -1,3 +1,4 @@
+import ContadorRed from "./Components/ContadorRed";
 import Counter from "./Components/Counter";
 import TimerPadre from "./Components/TimerPadre";
 import Usuario from "./Components/Usuario";
@@ -16,6 +17,10 @@ function App() {
     <hr/>
 
     <TimerPadre />
+
+    <h2>useReducer</h2>
+    <hr/>
+    <ContadorRed />
 
    </>
   
